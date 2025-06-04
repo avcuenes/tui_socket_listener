@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='netutil-tui',  # The name of your package
-    version='0.1.1',     # The current version of your package
+    version='0.1.2',     # The current version of your package
     author='Mehmet Enes Avcu',  # Your name or organization
     author_email='your.email@example.com', # Your email
     description='A TUI-based network utility for TCP/UDP listen/write operations.',
@@ -19,7 +19,7 @@ setup(
     # Define console scripts to make your package executable from the terminal
     entry_points={
         'console_scripts': [
-            'netutil = netutil.network_utility_tui:main', # 'netutil' is the command,
+            'listensocket = netutil.network_utility_tui:main', # 'netutil' is the command,
                                                           # 'netutil.network_utility_tui' is the module,
                                                           # 'main' is the function to call.
         ],
